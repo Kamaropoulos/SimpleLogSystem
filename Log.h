@@ -2,7 +2,7 @@
 
 class Log {
 public:
-	bool Initialize();
+	bool Initialize(char LogFileName[]);
 	~Log();
 	void LogWrite(char level[], char message[]);
 };

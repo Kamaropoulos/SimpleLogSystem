@@ -10,11 +10,11 @@ int main() {
 	EventLog->Initialize("test.log");
 
 	//Use Event Logger by applying the Log Level and the message you want to be logged
-	EventLog->LogWrite("INFO", "This is a simple log message.");
+	EventLog->LogWrite("INFO", "Example", "This is a simple log message.");
 
-	EventLog->LogWrite("WARNING", "This is a warning.");
+	EventLog->LogWrite("WARNING", "Example", "This is a warning.");
 
-	EventLog->LogWrite("ERROR", "This is an error.");
+	EventLog->LogWrite("ERROR", "Example", "This is an error.");
 
 	//Finally, delete the Log object when you don't need it anymore
 	delete EventLog;

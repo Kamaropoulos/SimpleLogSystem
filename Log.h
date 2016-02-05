@@ -14,17 +14,17 @@ private:
 public:
 	bool Initialize(char LogFileName[]) {
 		LogFile.open(LogFileName, std::ios_base::app);
-		LogWrite("INFO", "The Event Log service was started.");
+		LogWrite("INFO", "EventLog", "The Event Log service was started.");
 		return true;
 	}
-	void LogWrite(char level[], char message[]) {
+	void LogWrite(char level[], char module[], char message[]) {
 		time_t now = time(0);
 		sTm = gmtime(&now);
 		strftime(buff, sizeof(buff), "%Y-%m-%d %H:%M:%S", sTm);
-		LogFile << buff << " " << level << ": " << message << std::endl;
+		LogFile << buff << " " << level << ": [" <<  module << "] "<< message << std::endl;
 	}
 	~Log() {
-		LogWrite("INFO", "The Event log service was stopped.");
+		LogWrite("INFO", "EventLog", "The Event log service was stopped.");
 		LogFile.close();
 	}
 };

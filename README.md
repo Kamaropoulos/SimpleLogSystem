@@ -1,4 +1,4 @@
-#SimpleLogSystem (SLS) [![Build Status](https://travis-ci.org/KostasLifeboy/SimpleLogSystem.svg?branch=master)](https://travis-ci.org/KostasLifeboy/SimpleLogSystem)
+#SimpleLogSystem (SLS) [![Build Status](https://travis-ci.org/Kamaropoulos/SimpleLogSystem.svg?branch=master)](https://travis-ci.org/KostasLifeboy/SimpleLogSystem)
 This is a very simple library for logging information into files.
 
 ##How to Use
